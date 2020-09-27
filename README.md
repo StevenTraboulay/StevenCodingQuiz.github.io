@@ -27,3 +27,5 @@ Process:
 New techniques:
 
 1) Through stacked overflow and googling i learned we could interchange var and let in some instances as well as var and const (constant) depending on if the variable is global or not
+
+2) using the => in lieu of function can save time and can actually clean up code
