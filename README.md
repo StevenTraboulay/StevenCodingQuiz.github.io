@@ -26,6 +26,8 @@ Process:
 
 9)  on new highscore page created function to pull local data from Quiz to display on the highscore page.
 
+10) added in timer, the iteration works and has a stop of 25 seconds. the user loses 2 seconds each wrong answer and a hidden score feature where they lose -3 points if they guess wrong.
+
 
 ****
 New techniques:

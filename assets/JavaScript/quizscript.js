@@ -3,12 +3,15 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const timerEl = document.getElementById("time");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
+let time = question.length = 25;
+let timerId;
 
 let questions = [
   {
@@ -69,12 +72,24 @@ let questions = [
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 6;
 
-startGame = () => {
+
+
+//functions 
+startQuiz = () => {
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
   getNewQuestion();
+
+  //start timer
+  timerId = setInterval(clockTick, 1000);
+
+  //show timer
+
+  timerEl.textContent = time;
 };
+
+
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -115,7 +130,20 @@ choices.forEach(choice => {
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
+
     }
+
+    if (classToApply === "incorrect"){
+       time -=2;
+
+       if (time <0 ) {
+           time = 0;
+       }
+     score = score - 3;
+    }
+    
+//display new time on page
+timerEl.textContent = time;
 
     selectedChoice.parentElement.classList.add(classToApply);
 
@@ -124,11 +152,24 @@ choices.forEach(choice => {
       getNewQuestion();
     }, 1000);
   });
-});
+})
+
+function clockTick(){
+    //update time
+    time--;
+    timerEl.textContent = time;
+    
+
+}
+
+
+
 
 incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 };
 
-startGame();
+
+//executions
+startQuiz();

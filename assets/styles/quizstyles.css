@@ -1,3 +1,7 @@
+h2 div {
+  color: #225557;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
