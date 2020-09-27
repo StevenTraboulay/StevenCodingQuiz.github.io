@@ -25,3 +25,25 @@
     width: 100%;
   }
   
+  .correct {
+    background-color: #16aa3b;
+  }
+  
+  .incorrect {
+    background-color: #c01c2c;
+  }
+
+  /*tracking*/
+  #hud{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text{
+    text-align: center;
+  }
