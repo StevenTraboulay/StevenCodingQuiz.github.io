@@ -15,7 +15,7 @@ let timerId;
 
 let questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript??",
+    question: " Inside which HTML element do we put the JavaScript??",
     choice1: "<script>",
     choice2: "<javascript>",
     choice3: "<js>",
@@ -24,20 +24,20 @@ let questions = [
   },
   {
     question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
+      " What function(s) would we use to randomize in Javascript?",
+    choice1: "randomly pick a number, type it in and cross your fingers",
+    choice2: "math.script(random).value>",
+    choice3: "math.random()",
+    choice4: "/d20 dice",
     answer: 3,
   },
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
-    answer: 4,
+    question: " where do we put the <head></head> tags?",
+    choice1: "before the body tag",
+    choice2: "inside the body tag",
+    choice3: "after the body tag",
+    choice4: "a class in the body tag",
+    answer: 1,
   },
 
   {
@@ -50,21 +50,21 @@ let questions = [
   },
 
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
-    answer: 4,
+    question: " How would you execute your function?",
+    choice1: "<function name>.execute",
+    choice2: "<function name>()",
+    choice3: "execute.<function name>",
+    choice4: "execute function()",
+    answer: 2,
   },
 
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
-    answer: 4,
+    question: " git add . does the following: ",
+    choice1: "sums the number of documents together",
+    choice2: "outputs the value of the documents",
+    choice3: "adds a change in the working directory to the staging area.",
+    choice4: "adds current text to git README",
+    answer: 3,
   },
 ];
 
