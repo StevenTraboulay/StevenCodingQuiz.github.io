@@ -22,6 +22,10 @@ Process:
 
 7) Also creating the local storage and retrieval options to allow the score saving.
 
+8) creating a page for highscores as well as associated styling and script
+
+9)  on new highscore page created function to pull local data from Quiz to display on the highscore page.
+
 
 ****
 New techniques:
@@ -29,3 +33,7 @@ New techniques:
 1) Through stacked overflow and googling i learned we could interchange var and let in some instances as well as var and const (constant) depending on if the variable is global or not
 
 2) using the => in lieu of function can save time and can actually clean up code
+
+3) using ! and then tab in an HTML will call an easy boilerplate to utilize for HTML and build off of
+
+4) learned that .map takes an incomy array and converts incoming items into a new array (self learning not taught in curriculum would recommend)
