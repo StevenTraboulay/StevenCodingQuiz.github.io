@@ -49,6 +49,11 @@ Process:
 
 11) updated questions and cleaned up code, updated the README
 
+****
+DEBUG:
+
+1) had timer issues, ran function through stopQuiz to route to end page for highscore.
+
 
 ****
 New techniques:
